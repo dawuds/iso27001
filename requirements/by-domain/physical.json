@@ -1,0 +1,15 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationNote": "Indicative requirements for ISO 27001:2022 physical controls. Not verbatim ISO text.",
+  "domain": "physical",
+  "domainName": "Physical Controls",
+  "requirements": [
+    { "controlRef": "A.7.1", "id": "PHY-R01", "requirement": "Define and implement physical security perimeters with appropriate barriers to protect areas containing sensitive information and assets.", "priority": "high", "owner": "Physical Security Manager" },
+    { "controlRef": "A.7.2", "id": "PHY-R02", "requirement": "Implement entry controls for secure areas ensuring only authorized personnel gain access, with visitor management procedures.", "priority": "high", "owner": "Physical Security Manager" },
+    { "controlRef": "A.7.4", "id": "PHY-R03", "requirement": "Continuously monitor premises for unauthorized physical access using surveillance and intrusion detection systems.", "priority": "high", "owner": "Physical Security Manager" },
+    { "controlRef": "A.7.5", "id": "PHY-R04", "requirement": "Design and implement protections against physical and environmental threats including fire, flood, earthquake, and power failure.", "priority": "high", "owner": "Facilities Manager" },
+    { "controlRef": "A.7.7", "id": "PHY-R05", "requirement": "Enforce clear desk and clear screen policies to prevent unauthorized access to information left unattended.", "priority": "medium", "owner": "CISO" },
+    { "controlRef": "A.7.10", "id": "PHY-R06", "requirement": "Manage storage media throughout their lifecycle with appropriate handling, transport, and secure disposal procedures.", "priority": "high", "owner": "IT Asset Manager" },
+    { "controlRef": "A.7.14", "id": "PHY-R07", "requirement": "Verify that equipment containing storage media is securely sanitized or physically destroyed prior to disposal or reuse.", "priority": "critical", "owner": "IT Asset Manager" }
+  ]
+}

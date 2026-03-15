@@ -1,0 +1,24 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationNote": "Indicative requirements for ISO 27001:2022 organizational controls. Not verbatim ISO text.",
+  "domain": "organizational",
+  "domainName": "Organizational Controls",
+  "requirements": [
+    { "controlRef": "A.5.1", "id": "ORG-R01", "requirement": "Establish and maintain a set of information security policies approved by management, communicated to all relevant parties, and reviewed at planned intervals.", "priority": "critical", "owner": "CISO" },
+    { "controlRef": "A.5.2", "id": "ORG-R02", "requirement": "Define, allocate, and communicate all information security roles and responsibilities across the organization.", "priority": "critical", "owner": "CISO" },
+    { "controlRef": "A.5.3", "id": "ORG-R03", "requirement": "Identify and segregate conflicting duties and areas of responsibility, implementing compensating controls where full segregation is impractical.", "priority": "high", "owner": "Internal Audit" },
+    { "controlRef": "A.5.7", "id": "ORG-R04", "requirement": "Collect, analyse, and produce actionable threat intelligence relevant to the organization's risk profile.", "priority": "high", "owner": "SOC Manager" },
+    { "controlRef": "A.5.9", "id": "ORG-R05", "requirement": "Develop and maintain an inventory of information and associated assets, assigning ownership for each asset.", "priority": "critical", "owner": "IT Asset Manager" },
+    { "controlRef": "A.5.12", "id": "ORG-R06", "requirement": "Classify information according to confidentiality, integrity, and availability needs, with documented classification criteria.", "priority": "high", "owner": "Information Governance" },
+    { "controlRef": "A.5.15", "id": "ORG-R07", "requirement": "Establish access control rules based on business and security requirements, applying least privilege and need-to-know principles.", "priority": "critical", "owner": "IAM Manager" },
+    { "controlRef": "A.5.16", "id": "ORG-R08", "requirement": "Manage the full lifecycle of identities including provisioning, verification, maintenance, and timely deactivation.", "priority": "critical", "owner": "IAM Manager" },
+    { "controlRef": "A.5.19", "id": "ORG-R09", "requirement": "Define and implement processes to manage information security risks in supplier relationships, including contractual security requirements.", "priority": "high", "owner": "Vendor Risk Manager" },
+    { "controlRef": "A.5.23", "id": "ORG-R10", "requirement": "Establish processes for secure acquisition, use, management, and exit from cloud services, addressing shared responsibility.", "priority": "high", "owner": "Cloud Security Architect" },
+    { "controlRef": "A.5.24", "id": "ORG-R11", "requirement": "Plan and prepare for information security incident management with defined roles, procedures, and classification schemes.", "priority": "critical", "owner": "Incident Response Lead" },
+    { "controlRef": "A.5.26", "id": "ORG-R12", "requirement": "Respond to information security incidents following documented procedures including containment, eradication, and recovery.", "priority": "critical", "owner": "Incident Response Lead" },
+    { "controlRef": "A.5.29", "id": "ORG-R13", "requirement": "Plan how to maintain information security at an appropriate level during organizational disruptions.", "priority": "high", "owner": "BCM Manager" },
+    { "controlRef": "A.5.31", "id": "ORG-R14", "requirement": "Identify, document, and maintain currency of all legal, statutory, regulatory, and contractual requirements relevant to information security.", "priority": "critical", "owner": "Legal / Compliance" },
+    { "controlRef": "A.5.34", "id": "ORG-R15", "requirement": "Identify and meet requirements for privacy and protection of PII as required by applicable laws, regulations, and contractual obligations.", "priority": "critical", "owner": "DPO" },
+    { "controlRef": "A.5.35", "id": "ORG-R16", "requirement": "Conduct independent reviews of the ISMS approach and implementation at planned intervals or when significant changes occur.", "priority": "high", "owner": "Internal Audit" }
+  ]
+}

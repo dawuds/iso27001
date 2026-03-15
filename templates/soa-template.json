@@ -1,0 +1,39 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationNote": "AI-generated Statement of Applicability template for ISO 27001:2022. Organizations must complete this based on their own risk assessment and ISMS scope.",
+  "title": "Statement of Applicability (SoA) Template",
+  "description": "Template for documenting the applicability of ISO 27001:2022 Annex A controls, with justifications for inclusion and exclusion.",
+  "version": "1.0",
+  "instructions": "For each Annex A control, document whether it is applicable, the justification for inclusion or exclusion, the implementation status, and any relevant notes. The SoA is a mandatory deliverable for ISO 27001 certification.",
+  "fields": [
+    { "name": "controlId", "description": "Annex A control reference (e.g., A.5.1)", "type": "string" },
+    { "name": "controlName", "description": "Name of the Annex A control", "type": "string" },
+    { "name": "theme", "description": "Control theme: Organizational, People, Physical, Technological", "type": "string" },
+    { "name": "applicable", "description": "Whether the control is applicable to the ISMS scope", "type": "boolean" },
+    { "name": "justification", "description": "Justification for inclusion or exclusion of the control", "type": "string" },
+    { "name": "implementationStatus", "description": "Current implementation status", "type": "enum", "values": ["not-started", "in-progress", "implemented", "not-applicable"] },
+    { "name": "implementationMethod", "description": "How the control is implemented (policy, procedure, technology, etc.)", "type": "string" },
+    { "name": "evidenceRef", "description": "Reference to evidence demonstrating implementation", "type": "string" },
+    { "name": "riskTreatmentRef", "description": "Reference to risk treatment plan if applicable", "type": "string" },
+    { "name": "notes", "description": "Additional notes or observations", "type": "string" }
+  ],
+  "sampleEntries": [
+    {
+      "controlId": "A.5.1", "controlName": "Policies for information security", "theme": "Organizational",
+      "applicable": true, "justification": "Required by ISMS scope — information security policies are fundamental to the management system.",
+      "implementationStatus": "implemented", "implementationMethod": "Information Security Policy Framework document approved by CEO, reviewed annually.",
+      "evidenceRef": "ISO-E001", "riskTreatmentRef": "", "notes": "Last review: 2025-12. Next scheduled: 2026-12."
+    },
+    {
+      "controlId": "A.7.6", "controlName": "Working in secure areas", "theme": "Physical",
+      "applicable": true, "justification": "Organization operates secure areas including data centre and key management facility.",
+      "implementationStatus": "implemented", "implementationMethod": "Secure area access procedures, supervision requirements, and recording device restrictions.",
+      "evidenceRef": "ISO-E018", "riskTreatmentRef": "", "notes": "Applies to data centre and key management room."
+    },
+    {
+      "controlId": "A.8.11", "controlName": "Data masking", "theme": "Technological",
+      "applicable": false, "justification": "Organization does not use production data in non-production environments — synthetic data generation is used instead.",
+      "implementationStatus": "not-applicable", "implementationMethod": "", "evidenceRef": "", "riskTreatmentRef": "", "notes": "Re-evaluate if data usage practices change."
+    }
+  ]
+}

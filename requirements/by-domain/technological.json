@@ -1,0 +1,24 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationNote": "Indicative requirements for ISO 27001:2022 technological controls. Not verbatim ISO text.",
+  "domain": "technological",
+  "domainName": "Technological Controls",
+  "requirements": [
+    { "controlRef": "A.8.1", "id": "TECH-R01", "requirement": "Implement endpoint protection on all user devices including encryption, anti-malware, and mobile device management.", "priority": "critical", "owner": "Endpoint Security Team" },
+    { "controlRef": "A.8.2", "id": "TECH-R02", "requirement": "Restrict and manage privileged access rights using PAM solutions with session recording and periodic review.", "priority": "critical", "owner": "IAM Manager" },
+    { "controlRef": "A.8.5", "id": "TECH-R03", "requirement": "Implement multi-factor authentication for access to critical systems and remote access scenarios.", "priority": "critical", "owner": "IAM Manager" },
+    { "controlRef": "A.8.7", "id": "TECH-R04", "requirement": "Deploy anti-malware protection across all systems with automatic signature updates and behaviour-based detection.", "priority": "critical", "owner": "SOC Manager" },
+    { "controlRef": "A.8.8", "id": "TECH-R05", "requirement": "Conduct regular vulnerability assessments, prioritize findings by risk, and remediate within defined SLAs.", "priority": "critical", "owner": "Vulnerability Manager" },
+    { "controlRef": "A.8.9", "id": "TECH-R06", "requirement": "Establish and maintain security configuration baselines for all systems, monitoring for unauthorized deviations.", "priority": "high", "owner": "Infrastructure Security" },
+    { "controlRef": "A.8.12", "id": "TECH-R07", "requirement": "Implement data leakage prevention controls on systems processing sensitive information, monitoring exfiltration channels.", "priority": "high", "owner": "Data Protection Team" },
+    { "controlRef": "A.8.13", "id": "TECH-R08", "requirement": "Maintain backup copies of information and systems with documented schedules and regular restoration testing.", "priority": "critical", "owner": "Backup Administrator" },
+    { "controlRef": "A.8.15", "id": "TECH-R09", "requirement": "Produce, centralize, protect, and analyse security logs from all critical systems with tamper protection.", "priority": "critical", "owner": "SOC Manager" },
+    { "controlRef": "A.8.16", "id": "TECH-R10", "requirement": "Implement continuous monitoring of networks, systems, and applications with SIEM-based anomaly detection.", "priority": "critical", "owner": "SOC Manager" },
+    { "controlRef": "A.8.20", "id": "TECH-R11", "requirement": "Secure and segment networks to protect information in systems and applications, controlling traffic between zones.", "priority": "high", "owner": "Network Security" },
+    { "controlRef": "A.8.24", "id": "TECH-R12", "requirement": "Define and implement cryptographic standards including approved algorithms, minimum key lengths, and key lifecycle management.", "priority": "high", "owner": "Security Architect" },
+    { "controlRef": "A.8.25", "id": "TECH-R13", "requirement": "Integrate security into the software development lifecycle with security gates, code reviews, and security testing.", "priority": "high", "owner": "Application Security Lead" },
+    { "controlRef": "A.8.28", "id": "TECH-R14", "requirement": "Apply secure coding principles following industry standards such as OWASP, with static and dynamic analysis.", "priority": "high", "owner": "Application Security Lead" },
+    { "controlRef": "A.8.29", "id": "TECH-R15", "requirement": "Conduct security testing including penetration testing during development and before production deployment.", "priority": "high", "owner": "Security Testing Manager" },
+    { "controlRef": "A.8.32", "id": "TECH-R16", "requirement": "Implement formal change management processes with security impact assessment, testing, and approval gates.", "priority": "critical", "owner": "Change Manager" }
+  ]
+}

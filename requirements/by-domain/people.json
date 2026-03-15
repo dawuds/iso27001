@@ -1,0 +1,15 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationNote": "Indicative requirements for ISO 27001:2022 people controls. Not verbatim ISO text.",
+  "domain": "people",
+  "domainName": "People Controls",
+  "requirements": [
+    { "controlRef": "A.6.1", "id": "PPL-R01", "requirement": "Conduct background verification checks on all candidates prior to employment, proportionate to the role sensitivity and applicable regulations.", "priority": "high", "owner": "HR Manager" },
+    { "controlRef": "A.6.2", "id": "PPL-R02", "requirement": "Include information security responsibilities in employment agreements, covering obligations during and after employment.", "priority": "critical", "owner": "HR Manager" },
+    { "controlRef": "A.6.3", "id": "PPL-R03", "requirement": "Deliver information security awareness training to all personnel upon joining and periodically thereafter, with role-specific training for key functions.", "priority": "critical", "owner": "Security Awareness Manager" },
+    { "controlRef": "A.6.4", "id": "PPL-R04", "requirement": "Establish and communicate a formal disciplinary process for information security policy violations.", "priority": "high", "owner": "HR Manager" },
+    { "controlRef": "A.6.5", "id": "PPL-R05", "requirement": "Define, enforce, and communicate information security responsibilities that remain valid after termination or change of employment.", "priority": "high", "owner": "HR Manager" },
+    { "controlRef": "A.6.7", "id": "PPL-R06", "requirement": "Implement security measures for remote working including endpoint protection, VPN usage, and physical environment security.", "priority": "high", "owner": "CISO" },
+    { "controlRef": "A.6.8", "id": "PPL-R07", "requirement": "Provide accessible mechanisms for personnel to report observed or suspected information security events in a timely manner.", "priority": "critical", "owner": "Incident Response Lead" }
+  ]
+}

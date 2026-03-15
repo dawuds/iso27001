@@ -1,0 +1,78 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationNote": "AI-generated indicative risk register for ISO 27001 ISMS. Risk scores are illustrative — organizations must calibrate to their own environment and risk appetite.",
+  "title": "Information Security Risk Register",
+  "description": "Register of information security risks aligned to ISO/IEC 27001:2022 Annex A themes",
+  "risks": [
+    {
+      "id": "ISR-001", "title": "Ransomware Attack on Critical Systems", "description": "Ransomware encrypts critical business systems and data, causing extended operational disruption and potential data loss.",
+      "category": "Technological", "annexRef": "A.8.7", "likelihood": 4, "impact": 5, "inherentRisk": 20,
+      "existingControls": ["EDR on all endpoints", "Network segmentation", "Immutable backups", "Email filtering"],
+      "residualLikelihood": 2, "residualImpact": 4, "residualRisk": 8, "treatment": "mitigate",
+      "treatmentPlan": "Deploy zero-trust architecture, conduct quarterly ransomware exercises, implement microsegmentation.", "owner": "CISO", "reviewDate": "2026-Q2"
+    },
+    {
+      "id": "ISR-002", "title": "Insider Threat — Data Exfiltration", "description": "Malicious or negligent insider exfiltrates sensitive data through email, cloud storage, or removable media.",
+      "category": "People", "annexRef": "A.6.3", "likelihood": 3, "impact": 4, "inherentRisk": 12,
+      "existingControls": ["DLP on email and endpoints", "USB restrictions", "User behaviour analytics", "Security awareness training"],
+      "residualLikelihood": 2, "residualImpact": 3, "residualRisk": 6, "treatment": "mitigate",
+      "treatmentPlan": "Enhance UBA rules, implement content-aware DLP policies, increase monitoring of high-privilege users.", "owner": "CISO", "reviewDate": "2026-Q2"
+    },
+    {
+      "id": "ISR-003", "title": "Cloud Service Provider Breach", "description": "Security breach at a cloud service provider exposes organizational data or disrupts cloud-hosted services.",
+      "category": "Organizational", "annexRef": "A.5.23", "likelihood": 3, "impact": 4, "inherentRisk": 12,
+      "existingControls": ["Cloud security assessments", "Encryption of data at rest and in transit", "Shared responsibility matrix documented", "Multi-region deployment"],
+      "residualLikelihood": 2, "residualImpact": 3, "residualRisk": 6, "treatment": "mitigate",
+      "treatmentPlan": "Implement CASB, enhance cloud monitoring, develop cloud exit strategy.", "owner": "Cloud Security Architect", "reviewDate": "2026-Q2"
+    },
+    {
+      "id": "ISR-004", "title": "Privileged Account Compromise", "description": "Administrative credentials are compromised through phishing, credential stuffing, or supply chain attack, enabling lateral movement.",
+      "category": "Technological", "annexRef": "A.8.2", "likelihood": 3, "impact": 5, "inherentRisk": 15,
+      "existingControls": ["PAM solution deployed", "MFA on privileged access", "Session recording", "Quarterly access recertification"],
+      "residualLikelihood": 2, "residualImpact": 4, "residualRisk": 8, "treatment": "mitigate",
+      "treatmentPlan": "Implement just-in-time privileged access, deploy credential rotation, enhance privileged session monitoring.", "owner": "IAM Manager", "reviewDate": "2026-Q2"
+    },
+    {
+      "id": "ISR-005", "title": "Third-Party Supply Chain Compromise", "description": "Compromise of a software or service supplier leads to malicious code injection or unauthorized access through the supply chain.",
+      "category": "Organizational", "annexRef": "A.5.21", "likelihood": 3, "impact": 4, "inherentRisk": 12,
+      "existingControls": ["Supplier security assessments", "SCA tools for dependencies", "Vendor audit rights in contracts"],
+      "residualLikelihood": 2, "residualImpact": 3, "residualRisk": 6, "treatment": "mitigate",
+      "treatmentPlan": "Implement SBOM requirements, enhance vendor monitoring, deploy software composition analysis in CI/CD.", "owner": "Vendor Risk Manager", "reviewDate": "2026-Q2"
+    },
+    {
+      "id": "ISR-006", "title": "Data Classification Failure", "description": "Sensitive information is misclassified or unclassified, leading to inadequate protection and potential unauthorized disclosure.",
+      "category": "Organizational", "annexRef": "A.5.12", "likelihood": 4, "impact": 3, "inherentRisk": 12,
+      "existingControls": ["Classification policy published", "Labelling tools deployed", "Annual training"],
+      "residualLikelihood": 3, "residualImpact": 2, "residualRisk": 6, "treatment": "mitigate",
+      "treatmentPlan": "Deploy automated classification tools, implement data discovery scanning, enhance classification training.", "owner": "Information Governance", "reviewDate": "2026-Q3"
+    },
+    {
+      "id": "ISR-007", "title": "Physical Intrusion to Data Centre", "description": "Unauthorized physical access to data centre or server room resulting in equipment theft, tampering, or service disruption.",
+      "category": "Physical", "annexRef": "A.7.2", "likelihood": 2, "impact": 5, "inherentRisk": 10,
+      "existingControls": ["Biometric access controls", "24/7 CCTV", "Security guards", "Visitor escort policy"],
+      "residualLikelihood": 1, "residualImpact": 4, "residualRisk": 4, "treatment": "mitigate",
+      "treatmentPlan": "Implement mantrap entry, upgrade CCTV analytics, conduct periodic penetration tests of physical controls.", "owner": "Physical Security Manager", "reviewDate": "2026-Q3"
+    },
+    {
+      "id": "ISR-008", "title": "Unpatched Vulnerability Exploitation", "description": "Known vulnerabilities in systems or applications are exploited before patches are applied, enabling unauthorized access or data breach.",
+      "category": "Technological", "annexRef": "A.8.8", "likelihood": 4, "impact": 4, "inherentRisk": 16,
+      "existingControls": ["Monthly vulnerability scanning", "Patch management process", "Virtual patching via WAF/IPS"],
+      "residualLikelihood": 3, "residualImpact": 3, "residualRisk": 9, "treatment": "mitigate",
+      "treatmentPlan": "Reduce critical patch SLA to 72 hours, implement automated patching for standard systems, expand vulnerability management scope.", "owner": "Vulnerability Manager", "reviewDate": "2026-Q2"
+    },
+    {
+      "id": "ISR-009", "title": "Regulatory Non-Compliance", "description": "Failure to comply with applicable data protection, privacy, or sector-specific regulations resulting in fines and reputational damage.",
+      "category": "Organizational", "annexRef": "A.5.31", "likelihood": 3, "impact": 4, "inherentRisk": 12,
+      "existingControls": ["Regulatory register maintained", "Compliance monitoring program", "Legal advisory engagement"],
+      "residualLikelihood": 2, "residualImpact": 3, "residualRisk": 6, "treatment": "mitigate",
+      "treatmentPlan": "Implement automated regulatory change tracking, enhance compliance testing program, conduct regulatory gap assessments.", "owner": "Legal / Compliance", "reviewDate": "2026-Q2"
+    },
+    {
+      "id": "ISR-010", "title": "Backup Failure and Data Loss", "description": "Backup systems fail or backup data is corrupted, resulting in inability to recover critical data after an incident.",
+      "category": "Technological", "annexRef": "A.8.13", "likelihood": 3, "impact": 5, "inherentRisk": 15,
+      "existingControls": ["Automated backup schedules", "Offsite backup storage", "Quarterly restoration testing"],
+      "residualLikelihood": 2, "residualImpact": 3, "residualRisk": 6, "treatment": "mitigate",
+      "treatmentPlan": "Implement immutable backup storage, increase restoration test frequency to monthly, deploy backup monitoring dashboard.", "owner": "Backup Administrator", "reviewDate": "2026-Q3"
+    }
+  ]
+}

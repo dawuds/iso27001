@@ -1,0 +1,40 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationNote": "AI-generated risk methodology aligned to ISO 27001:2022 and ISO 27005. Organizations should adapt to their specific context and risk appetite.",
+  "title": "Information Security Risk Assessment Methodology",
+  "description": "Structured methodology for assessing information security risks aligned to ISO/IEC 27001:2022 Clause 6.1 and ISO 27005 guidance.",
+  "framework": "ISO/IEC 27001:2022",
+  "approach": "qualitative-quantitative",
+  "scales": {
+    "likelihood": {
+      "levels": [
+        { "score": 1, "label": "Rare", "description": "May occur only in exceptional circumstances (<1% annual probability)", "frequency": "Less than once in 10 years" },
+        { "score": 2, "label": "Unlikely", "description": "Could occur but not expected (1-10% annual probability)", "frequency": "Once in 5-10 years" },
+        { "score": 3, "label": "Possible", "description": "Might occur at some time (10-50% annual probability)", "frequency": "Once in 2-5 years" },
+        { "score": 4, "label": "Likely", "description": "Will probably occur in most circumstances (50-80% annual probability)", "frequency": "Once or more per year" },
+        { "score": 5, "label": "Almost Certain", "description": "Expected to occur in most circumstances (>80% annual probability)", "frequency": "Multiple times per year" }
+      ]
+    },
+    "impact": {
+      "levels": [
+        { "score": 1, "label": "Insignificant", "description": "Minimal impact on information security, no significant business disruption", "examples": ["Minor policy deviation", "Single non-sensitive record affected"] },
+        { "score": 2, "label": "Minor", "description": "Limited impact requiring internal response only", "examples": ["Non-critical system brief outage", "Minor data quality issue"] },
+        { "score": 3, "label": "Moderate", "description": "Significant impact requiring management attention and potential notification", "examples": ["Customer-facing system outage <4 hours", "Limited data breach affecting <100 records"] },
+        { "score": 4, "label": "Major", "description": "Severe impact with regulatory reporting and significant business disruption", "examples": ["Extended system outage >4 hours", "Data breach affecting >1000 records", "Regulatory investigation"] },
+        { "score": 5, "label": "Critical", "description": "Catastrophic impact threatening organizational viability", "examples": ["Widespread data breach", "Complete loss of critical systems", "Regulatory sanctions", "Significant financial loss"] }
+      ]
+    }
+  },
+  "riskRating": {
+    "formula": "Likelihood x Impact",
+    "bands": [
+      { "range": [1, 4], "label": "Low", "color": "#22c55e", "action": "Accept and monitor — review annually" },
+      { "range": [5, 9], "label": "Medium", "color": "#f59e0b", "action": "Treat within 90 days — implement controls" },
+      { "range": [10, 15], "label": "High", "color": "#f97316", "action": "Treat within 30 days — escalate to ISMS owner" },
+      { "range": [16, 25], "label": "Critical", "color": "#ef4444", "action": "Immediate treatment — escalate to top management" }
+    ]
+  },
+  "treatmentOptions": ["Avoid", "Mitigate", "Transfer", "Accept"],
+  "reviewCycle": "At least annually, or upon material change in risk context",
+  "approvalAuthority": "ISMS Owner / Top Management"
+}

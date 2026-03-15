@@ -1,0 +1,29 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationNote": "Indicative mapping between ISO 27001:2022 Annex A and NIST CSF 2.0. Organizations should validate against official frameworks.",
+  "title": "ISO 27001:2022 to NIST CSF 2.0 Mapping",
+  "mappings": [
+    { "isoControl": "A.5.1", "nistFunction": "Govern", "nistCategory": "GV.PO", "nistSubcategory": "GV.PO-01", "relationship": "supports", "notes": "Information security policies support governance policy establishment" },
+    { "isoControl": "A.5.2", "nistFunction": "Govern", "nistCategory": "GV.RR", "nistSubcategory": "GV.RR-01", "relationship": "supports", "notes": "Roles and responsibilities map to organizational risk roles" },
+    { "isoControl": "A.5.7", "nistFunction": "Identify", "nistCategory": "ID.RA", "nistSubcategory": "ID.RA-02", "relationship": "supports", "notes": "Threat intelligence supports risk identification" },
+    { "isoControl": "A.5.9", "nistFunction": "Identify", "nistCategory": "ID.AM", "nistSubcategory": "ID.AM-01", "relationship": "equivalent", "notes": "Asset inventory directly maps to asset management" },
+    { "isoControl": "A.5.12", "nistFunction": "Identify", "nistCategory": "ID.AM", "nistSubcategory": "ID.AM-05", "relationship": "supports", "notes": "Classification supports asset prioritization" },
+    { "isoControl": "A.5.15", "nistFunction": "Protect", "nistCategory": "PR.AA", "nistSubcategory": "PR.AA-01", "relationship": "equivalent", "notes": "Access control directly maps" },
+    { "isoControl": "A.5.17", "nistFunction": "Protect", "nistCategory": "PR.AA", "nistSubcategory": "PR.AA-02", "relationship": "supports", "notes": "Authentication management supports identity proofing" },
+    { "isoControl": "A.5.23", "nistFunction": "Govern", "nistCategory": "GV.SC", "nistSubcategory": "GV.SC-07", "relationship": "supports", "notes": "Cloud security supports supply chain risk management" },
+    { "isoControl": "A.5.24", "nistFunction": "Respond", "nistCategory": "RS.MA", "nistSubcategory": "RS.MA-01", "relationship": "equivalent", "notes": "Incident planning maps directly" },
+    { "isoControl": "A.5.26", "nistFunction": "Respond", "nistCategory": "RS.MA", "nistSubcategory": "RS.MA-02", "relationship": "equivalent", "notes": "Incident response maps directly" },
+    { "isoControl": "A.5.29", "nistFunction": "Recover", "nistCategory": "RC.RP", "nistSubcategory": "RC.RP-01", "relationship": "supports", "notes": "Security during disruption supports recovery planning" },
+    { "isoControl": "A.6.3", "nistFunction": "Protect", "nistCategory": "PR.AT", "nistSubcategory": "PR.AT-01", "relationship": "equivalent", "notes": "Awareness training maps directly" },
+    { "isoControl": "A.7.1", "nistFunction": "Protect", "nistCategory": "PR.AA", "nistSubcategory": "PR.AA-06", "relationship": "supports", "notes": "Physical perimeters support physical access control" },
+    { "isoControl": "A.8.1", "nistFunction": "Protect", "nistCategory": "PR.DS", "nistSubcategory": "PR.DS-01", "relationship": "supports", "notes": "Endpoint protection supports data security" },
+    { "isoControl": "A.8.2", "nistFunction": "Protect", "nistCategory": "PR.AA", "nistSubcategory": "PR.AA-05", "relationship": "equivalent", "notes": "Privileged access maps directly" },
+    { "isoControl": "A.8.7", "nistFunction": "Protect", "nistCategory": "PR.DS", "nistSubcategory": "PR.DS-01", "relationship": "supports", "notes": "Malware protection supports data security" },
+    { "isoControl": "A.8.8", "nistFunction": "Identify", "nistCategory": "ID.RA", "nistSubcategory": "ID.RA-01", "relationship": "equivalent", "notes": "Vulnerability management maps directly" },
+    { "isoControl": "A.8.15", "nistFunction": "Detect", "nistCategory": "DE.CM", "nistSubcategory": "DE.CM-01", "relationship": "equivalent", "notes": "Logging supports continuous monitoring" },
+    { "isoControl": "A.8.16", "nistFunction": "Detect", "nistCategory": "DE.CM", "nistSubcategory": "DE.CM-01", "relationship": "equivalent", "notes": "Monitoring activities map directly" },
+    { "isoControl": "A.8.24", "nistFunction": "Protect", "nistCategory": "PR.DS", "nistSubcategory": "PR.DS-02", "relationship": "equivalent", "notes": "Cryptography supports data in transit protection" },
+    { "isoControl": "A.8.25", "nistFunction": "Protect", "nistCategory": "PR.DS", "nistSubcategory": "PR.DS-08", "relationship": "supports", "notes": "Secure SDLC supports software integrity" },
+    { "isoControl": "A.8.32", "nistFunction": "Protect", "nistCategory": "PR.IP", "nistSubcategory": "PR.IP-03", "relationship": "equivalent", "notes": "Change management maps directly" }
+  ]
+}

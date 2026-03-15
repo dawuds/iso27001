@@ -1,0 +1,21 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationNote": "Indicative mapping between ISO 27001:2022 Annex A and BNM RMiT sections. Organizations should validate against official frameworks.",
+  "title": "ISO 27001:2022 to BNM RMiT Mapping",
+  "mappings": [
+    { "isoControl": "A.5.1", "rmitSection": "S8 - Governance", "rmitClause": "8.1", "relationship": "supports", "notes": "Security policies support RMiT governance requirements" },
+    { "isoControl": "A.5.2", "rmitSection": "S8 - Governance", "rmitClause": "8.3", "relationship": "supports", "notes": "Roles and responsibilities align with RMiT governance structure" },
+    { "isoControl": "A.5.7", "rmitSection": "S11 - Cybersecurity", "rmitClause": "11.3", "relationship": "supports", "notes": "Threat intelligence supports RMiT cyber threat monitoring" },
+    { "isoControl": "A.5.9", "rmitSection": "S9 - Risk Management", "rmitClause": "9.2", "relationship": "supports", "notes": "Asset inventory supports RMiT risk identification" },
+    { "isoControl": "A.5.15", "rmitSection": "S11 - Cybersecurity", "rmitClause": "11.8", "relationship": "supports", "notes": "Access control aligns with RMiT cyber controls" },
+    { "isoControl": "A.5.19", "rmitSection": "S15 - Third-Party", "rmitClause": "15.1", "relationship": "supports", "notes": "Supplier security aligns with RMiT outsourcing requirements" },
+    { "isoControl": "A.5.24", "rmitSection": "S11 - Cybersecurity", "rmitClause": "11.12", "relationship": "supports", "notes": "Incident management aligns with RMiT incident response" },
+    { "isoControl": "A.5.29", "rmitSection": "S14 - Service Continuity", "rmitClause": "14.1", "relationship": "supports", "notes": "Security during disruption supports RMiT BCP requirements" },
+    { "isoControl": "A.7.1", "rmitSection": "S13 - Physical Security", "rmitClause": "13.1", "relationship": "supports", "notes": "Physical security perimeters align with RMiT data centre controls" },
+    { "isoControl": "A.8.7", "rmitSection": "S11 - Cybersecurity", "rmitClause": "11.5", "relationship": "supports", "notes": "Malware protection supports RMiT endpoint security" },
+    { "isoControl": "A.8.8", "rmitSection": "S11 - Cybersecurity", "rmitClause": "11.6", "relationship": "supports", "notes": "Vulnerability management aligns with RMiT requirements" },
+    { "isoControl": "A.8.15", "rmitSection": "S11 - Cybersecurity", "rmitClause": "11.10", "relationship": "supports", "notes": "Logging supports RMiT monitoring requirements" },
+    { "isoControl": "A.8.24", "rmitSection": "S12 - Cryptography", "rmitClause": "12.1", "relationship": "equivalent", "notes": "Cryptography controls align closely with RMiT encryption requirements" },
+    { "isoControl": "A.8.25", "rmitSection": "S10 - IT Operations", "rmitClause": "10.5", "relationship": "supports", "notes": "Secure SDLC supports RMiT development requirements" }
+  ]
+}

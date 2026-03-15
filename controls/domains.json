@@ -1,0 +1,28 @@
+{
+  "sourceType": "constructed-indicative",
+  "verificationNote": "Domain structure based on ISO/IEC 27001:2022 Annex A themes. Control names and descriptions are indicative paraphrases — not verbatim ISO text. Organizations should verify against the official ISO/IEC 27001:2022 standard.",
+  "organizational": {
+    "name": "Organizational Controls",
+    "description": "Controls related to organizational policies, roles, responsibilities, and management processes for information security",
+    "controlCount": 37,
+    "annexRange": "A.5.1 – A.5.37"
+  },
+  "people": {
+    "name": "People Controls",
+    "description": "Controls related to individual people including screening, awareness, training, and disciplinary processes",
+    "controlCount": 8,
+    "annexRange": "A.6.1 – A.6.8"
+  },
+  "physical": {
+    "name": "Physical Controls",
+    "description": "Controls related to physical security of premises, equipment, and supporting infrastructure",
+    "controlCount": 14,
+    "annexRange": "A.7.1 – A.7.14"
+  },
+  "technological": {
+    "name": "Technological Controls",
+    "description": "Controls related to technology-based security measures including access control, cryptography, and secure development",
+    "controlCount": 34,
+    "annexRange": "A.8.1 – A.8.34"
+  }
+}
