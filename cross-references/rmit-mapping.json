@@ -2,6 +2,8 @@
   "sourceType": "constructed-indicative",
   "verificationNote": "Indicative mapping between ISO 27001:2022 Annex A and BNM RMiT sections. Organizations should validate against official frameworks.",
   "title": "ISO 27001:2022 to BNM RMiT Mapping",
+  "_mappingType": "clause-level",
+  "_mappingNote": "References use RMiT section and clause numbers (e.g. 8.1, 11.3) which map to regulatory text paragraphs, not to individual control slugs in the RMIT controls/library.json. Closest slug-level equivalents: 8.1/8.3 -> board-technology-risk-oversight, senior-management-accountability; 9.2 -> technology-risk-assessment; 10.5 -> sdlc-framework; 11.3 -> threat-intelligence-program; 11.5 -> endpoint-protection; 11.6 -> vulnerability-assessment; 11.8 -> access-control-framework; 11.10 -> siem-implementation; 11.12 -> incident-response-plan; 12.1 -> cryptographic-controls; 13.1 -> data-centre-physical-security; 14.1 -> it-service-continuity; 15.1 -> vendor-risk-assessment.",
   "mappings": [
     { "isoControl": "A.5.1", "rmitSection": "S8 - Governance", "rmitClause": "8.1", "relationship": "supports", "notes": "Security policies support RMiT governance requirements" },
     { "isoControl": "A.5.2", "rmitSection": "S8 - Governance", "rmitClause": "8.3", "relationship": "supports", "notes": "Roles and responsibilities align with RMiT governance structure" },

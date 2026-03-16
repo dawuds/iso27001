@@ -24,6 +24,6 @@
     { "isoControl": "A.8.16", "nistFunction": "Detect", "nistCategory": "DE.CM", "nistSubcategory": "DE.CM-01", "relationship": "equivalent", "notes": "Monitoring activities map directly" },
     { "isoControl": "A.8.24", "nistFunction": "Protect", "nistCategory": "PR.DS", "nistSubcategory": "PR.DS-02", "relationship": "equivalent", "notes": "Cryptography supports data in transit protection" },
     { "isoControl": "A.8.25", "nistFunction": "Protect", "nistCategory": "PR.DS", "nistSubcategory": "PR.DS-08", "relationship": "supports", "notes": "Secure SDLC supports software integrity" },
-    { "isoControl": "A.8.32", "nistFunction": "Protect", "nistCategory": "PR.IP", "nistSubcategory": "PR.IP-03", "relationship": "equivalent", "notes": "Change management maps directly" }
+    { "isoControl": "A.8.32", "nistFunction": "Protect", "nistCategory": "PR.PS", "nistSubcategory": "PR.PS-01", "relationship": "equivalent", "notes": "Change management maps to configuration management processes" }
   ]
 }
